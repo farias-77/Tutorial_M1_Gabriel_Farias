@@ -1,5 +1,7 @@
 extends Node # instancia a classe Node2D
 
+# primeiro commit tutorial M1
+
 var status = 1
 var vscore = 0
 var x = 1.5 
