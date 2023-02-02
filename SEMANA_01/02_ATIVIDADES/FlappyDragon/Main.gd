@@ -2,6 +2,11 @@ extends Node # instancia a classe Node2D
 
 # primeiro commit tutorial M1
 
+# var status -> variável que controla o estado do jogo: jogando ou parado
+# var vscore -> variável que armazena a pontuação do usuário, é zerada a cada game over
+# var x -> variável que controla a velocidade do background e das colunas, sendo que o background se move em 1*x e as colunas em 2*x (velocidade horizontal do dragão)
+# var y -> variável que controla a posição do dragão no eixo vertical
+
 var status = 1
 var vscore = 0
 var x = 1.5 
