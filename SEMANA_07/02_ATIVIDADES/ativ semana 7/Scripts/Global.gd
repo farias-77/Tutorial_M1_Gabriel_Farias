@@ -1,9 +1,7 @@
 extends Node
 
-var score = 0
-var pausedGame = true
+var score = 0 # variável global que controla a pontuação
+var pausedGame = true # variável global que controla o status do jogo
 
-
-# Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	pass

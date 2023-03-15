@@ -1,13 +1,12 @@
 extends KinematicBody2D
 
-var moveSpeed = 500;
+var moveSpeed = 500; # velocidade base de movimentação do personagem
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	pass
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
+# Captura os inputs do usuário e move o personagem na respectiva direção, com verificação de fim de tela
 func _physics_process(delta):
 	if(Input.is_action_pressed(("ui_right"))):
 		position.x += moveSpeed * delta

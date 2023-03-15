@@ -1,24 +1,14 @@
 extends Node2D
 
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-
-
-# Called when the node enters the scene tree for the first time.
+# Inicia o jogo com a pontuação zerada
 func _ready():
 	Global.score = 0
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
-
-
+# Configura botão para redirecionar para o jogo em si
 func _on_Play_pressed():
 	return get_tree().change_scene("res://Scenes/Game.tscn")
 
-
+# Configura botão para redirecionar para a tela de tutorial
 func _on_Tutorial_pressed():
 	return get_tree().change_scene("res://Scenes/Tutorial.tscn")
